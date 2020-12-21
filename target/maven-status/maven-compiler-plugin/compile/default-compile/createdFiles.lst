@@ -1,0 +1,2 @@
+org\apache\nifi\web\filter\LoginFilter.class
+org\apache\nifi\web\filter\LogoutFilter.class

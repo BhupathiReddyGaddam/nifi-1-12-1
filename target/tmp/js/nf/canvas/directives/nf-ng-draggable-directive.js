@@ -1,0 +1,1 @@
+(function(a,b){if(typeof define==="function"&&define.amd){define([],function(){return(nf.ng.DraggableDirective=b())})}else{if(typeof exports==="object"&&typeof module==="object"){module.exports=(nf.ng.DraggableDirective=b())}else{nf.ng.DraggableDirective=b()}}}(this,function(){return function(){return{restrict:"AE",link:function(c,b,a){b.draggable(c.$eval(a.nfDraggable))}}}}));
