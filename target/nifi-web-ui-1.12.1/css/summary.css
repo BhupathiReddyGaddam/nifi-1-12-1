@@ -32,8 +32,8 @@
 #summary-header-text {
     font-size: 18px;
     font-weight: bold;
-    color: #728E9B;
-    font-family: Roboto Slab;
+    color: #e7e7e7;
+    font-family: sans-serif;
     margin-bottom: 30px;
 }
 
@@ -179,6 +179,7 @@ div.is-primary-icon {
 
 #heap-table span, #non-heap-table span {
     font-weight: bold;
+    color: #8ccdff;
 }
 
 #available-processors {
@@ -200,8 +201,9 @@ div.is-primary-icon {
 #content-repository-storage-usage-container {
     height: 179px;
     overflow-y: scroll;
-    border: 1px solid #ccc;
+    border: 1px solid #666;
     padding: 4px;
+    border-radius: 4px;
 }
 
 #content-repository-storage-usage-container div.storage-usage {
@@ -211,8 +213,9 @@ div.is-primary-icon {
 #provenance-repository-storage-usage-container {
     height: 179px;
     overflow-y: scroll;
-    border: 1px solid #ccc;
+    border: 1px solid #666;
     padding: 4px;
+    border-radius: 4px;
 }
 
 #provenance-repository-storage-usage-container div.storage-usage {
@@ -310,13 +313,19 @@ dl.setting-attributes-list {
 
 div.summary-table {
     position: absolute;
-    top: 70px;
+    top: 80px;
     left: 0px;
     bottom: 48px;
     right: 0px;
     overflow: hidden;
-    background-color: #fff;
+    background-color: #343434;
+    border: 1px solid #666;
+    border-radius: 6px;
     min-height: 150px;
+}
+
+.slick-cell.selected .fa {
+    color: #000 !important;
 }
 
 div.summary-table div.slick-viewport {

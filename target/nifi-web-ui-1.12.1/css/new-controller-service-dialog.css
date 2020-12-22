@@ -44,7 +44,7 @@
 }
 
 #controller-service-type-name {
-    color: #775351;
+    color: #e7e7e7;
     font-size: 16px;
     font-weight: 500;
     overflow: hidden;
@@ -59,7 +59,7 @@
     text-overflow: ellipsis;
     font-size: 13px;
     line-height: 16px;
-    color: #666;
+    color: #b0b0b0;
     letter-spacing: 0.25px;
     min-width: 0;
 }

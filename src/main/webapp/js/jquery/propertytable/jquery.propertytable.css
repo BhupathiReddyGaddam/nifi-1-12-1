@@ -95,6 +95,7 @@ textarea.value-field {
 
 div.string-check-container {
     line-height: 20px;
+    margin-top: 8px;
 }
 
 div.string-check {
@@ -106,7 +107,7 @@ div.string-check {
 span.string-check-label {
     font-size: 13px;
     font-weight: normal;
-    color: #262626;
+    color: #e7e7e7;
 }
 
 div.value pre {

@@ -104,13 +104,13 @@ i[class^="icon-"]:before, i[class*=" icon-"]:before {
 
 body {
     display: block;
-    font-family: Roboto, sans-serif;
+    font-family: sans-serif;
     overflow: hidden;
     color: #262626;
 }
 
 body.md-default-theme, body, html.md-default-theme, html {
-    background-color: white;
+    background-color: #343434;
 }
 
 button {
@@ -118,7 +118,7 @@ button {
 }
 
 .value-color {
-    color: #775351;
+    color: #e7e7e7;
 }
 
 ul.links li {
@@ -362,7 +362,9 @@ button.refresh-button {
 }
 
 button:hover {
-    border: 1px solid #004849; /*link-color*/
+    border: 1px solid #8ccdff !important; /*link-color*/
+    background-color: #8ccdff !important;
+    color: #000 !important;
 }
 
 button:disabled {
@@ -458,6 +460,9 @@ button.fa {
     font-size: 16px;
     cursor: pointer;
     line-height: 25px;
+    background-color: transparent;
+    border: 1px solid #8ccdff;
+    border-radius: 4px;
 }
 
 button.icon {
@@ -670,7 +675,7 @@ md-progress-linear > div {
 }
 
 .setting-name .fa {
-    color: #004849;
+    color: #8ccdff;
     margin-left: 5px;
 }
 
@@ -682,15 +687,15 @@ md-progress-linear > div {
 .setting-field {
     line-height: normal;
     width: 100%;
-    color: #775351;
+    color: #8ccdff;
     font-size: 13px;
     font-weight: 500;
 }
 
 .setting-header {
-    color: #728e9b;
+    color: #e7e7e7;
     font-size: 12pt;
-    font-family: 'Roboto Slab';
+    font-family: sans-serif;
     font-style: normal;
     font-weight: bold;
     padding-bottom: 20px;
@@ -703,6 +708,11 @@ md-progress-linear > div {
     background-color: #fff;
     cursor: default;
     line-height: normal;
+}
+
+md-progress-linear.md-default-theme.md-hue-2 .md-bar, 
+md-progress-linear.md-hue-2 .md-bar {
+    background-color: #8ccdff !important;
 }
 
 /* jquery ui autocomplete override */

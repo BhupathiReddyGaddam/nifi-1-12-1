@@ -34,8 +34,8 @@
 #provenance-header-text {
     font-size: 18px;
     font-weight: bold;
-    color: #728E9B;
-    font-family: Roboto Slab;
+    color: #e7e7e7;
+    font-family: sans-serif;
     margin-bottom: 15px;
     height: 118px;
 }
@@ -91,10 +91,11 @@ div.provenance-panel {
 }
 
 #oldest-event-message {
-    font-family: Roboto;
+    font-family: sans-serif;
     font-size: 13px;
     font-weight: normal;
     margin-bottom: 5px;
+    color: #e7e7e7;
 }
 
 /* provenance search controls */
@@ -110,10 +111,11 @@ div.provenance-panel {
 }
 
 #provenance-search-overview {
-    font-family: Roboto;
+    font-family: sans-serif;
     font-size: 13px;
     font-weight: normal;
     margin-bottom: 5px;
+    color: #e7e7e7;
 }
 
 #clear-provenance-search {
@@ -136,6 +138,7 @@ div.searchable-field-name {
     width: 25%;
     float: left;
     line-height: 26px;
+    color: #e7e7e7;
 }
 
 div.searchable-field-value {
@@ -329,13 +332,15 @@ div.content-detail-value {
 
 #provenance-table {
     position: absolute;
-    top: 88px;
+    top: 100px;
     left: 0px;
     bottom: 47px;
     right: 0px;
     overflow: hidden;
-    background-color: #fff;
+    background-color: #343434;
     min-height: 150px;
+    border: 1px solid #666;
+    border-radius: 6px;
 }
 
 #provenance-table div.slick-viewport {

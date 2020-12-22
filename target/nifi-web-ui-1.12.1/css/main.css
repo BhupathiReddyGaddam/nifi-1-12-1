@@ -246,14 +246,24 @@ span.details-title {
     margin-left: 3px;
     -webkit-user-select: none;
     -moz-user-select: none;
-    font-family: Roboto;
+    font-family: sans-serif;
     font-size: 13px;
+    color: #b0b0b0;
+}
+
+#summary-last-refreshed.value-color,
+#counters-last-refreshed.value-color,
+#bulletin-board-last-refreshed.value-color,
+#provenance-last-refreshed.value-color,
+#settings-last-refreshed.value-color {
+    color: #e7e7e7;
+    font-family: sans-serif;
 }
 
 .refresh-toggle {
     float: left;
     margin: 0px 20px 0px 0px !important;
-    font-family: Roboto;
+    font-family: sans-serif;
     font-size: 13px;
 }
 
@@ -327,6 +337,20 @@ span.details-title {
     left: 0;
     height: 22px;
     width: 300px;
+}
+
+md-switch .md-label {
+    color: #e7e7e7;
+}
+
+md-switch.md-default-theme.md-checked.md-primary .md-bar, 
+md-switch.md-checked.md-primary .md-bar {
+    background-color: #8ccdff;
+}
+
+md-switch.md-default-theme.md-checked.md-primary .md-thumb, 
+md-switch.md-checked.md-primary .md-thumb {
+    background-color: #8ccdff;
 }
 
 /* scrollbar styles */

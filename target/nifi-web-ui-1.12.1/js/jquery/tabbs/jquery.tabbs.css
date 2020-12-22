@@ -24,7 +24,6 @@ ul.tab-pane {
 
 .tab {
     float: left;
-    background-color: #eaeef0;
     margin-right: 2px;
     text-align: center;
     cursor: pointer;
@@ -32,30 +31,34 @@ ul.tab-pane {
     font-weight: 500;
     height: 31px;
     min-width: 88px;
-    padding: 0 10px;
-    border: 1px solid #CCDADB;
     text-transform: uppercase;
-    color: #004849;
-    border-bottom: 0px;
+    color: #85daf1;
+    border-bottom: 0;
+    padding: 0px 24px;
+    margin-right: 16px;
+    font-size: 14px;
+    font-family: sans-serif;
+    background-color: transparent;
 }
 
-.tab:hover {
-    border: 1px solid #004849;
+.tab:hover:not(.selected-tab) {
+    background-color: #E7E7E7;
+    border-radius: 26px 26px 26px 26px;
+    box-shadow: 0px 3px 3px 3px rgba(0, 0, 0, 0.5);
+    color: #000;
 }
 
 .selected-tab {
-    background-color: #fff;
-    border: 1px solid #004849;
-    border-bottom-color: #fff;
-    color: #262626;
-    border-bottom: 1px solid #fff !important;
+    background-color: #8ccdff;
+    color: #000;
+    border-radius: 26px 26px 26px 26px;
+    box-shadow: 0px 3px 3px 3px rgba(0, 0, 0, 0.5);
 }
 
 .tab-container {
     background-color: transparent;
     height: 32px;
     margin-bottom: 20px;
-    border-bottom: 1px solid #004849;
     width: 100%;
 }
 

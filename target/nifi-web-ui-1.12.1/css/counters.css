@@ -34,8 +34,8 @@
 #counters-header-text {
     font-size: 18px;
     font-weight: bold;
-    color: #728E9B;
-    font-family: Roboto Slab;
+    color: #e7e7e7;
+    font-family: sans-serif;
     margin-bottom: 30px;
 }
 
@@ -67,11 +67,13 @@
 
 #counters-table {
     position: absolute;
-    top: 98px;
+    top: 110px;
     left: 0px;
     bottom: 47px;
     right: 0px;
     min-height: 150px;
+    border: 1px solid #666;
+    border-radius: 6px;
 }
 
 #counters-table div.slick-viewport {

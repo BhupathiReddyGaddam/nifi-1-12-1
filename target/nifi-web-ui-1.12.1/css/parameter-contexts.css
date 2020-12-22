@@ -34,7 +34,7 @@ div.parameter-contexts-header-text {
     height: 28px;
     font-size: 18px;
     font-weight: bold;
-    color: #728E9B;
+    color: #e7e7e7;
     margin-bottom: 30px;
 }
 
@@ -57,11 +57,13 @@ div.parameter-contexts-container {
 
 div.parameter-contexts-table {
     position: absolute;
-    top: 0px;
+    top: 8px;
     left: 0px;
     bottom: 20px;
     right: 0px;
     min-height: 150px;
+    border: 1px solid #666;
+    border-radius: 6px;
 }
 
 #parameter-contexts-table div.slick-viewport {

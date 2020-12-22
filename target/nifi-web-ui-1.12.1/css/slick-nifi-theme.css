@@ -89,6 +89,10 @@
     text-align: center;
 }
 
+.slick-viewport .selected .fa {
+    color: #000;
+}
+
 .slick-viewport .icon {
     color: #8ccdff;
     line-height: 24px;
@@ -159,7 +163,7 @@ div.status-text {
 }
 
 .slick-header-column-sorted {
-    font-family: sans-serif;
+    font-style: inherit;
 }
 
 .slick-viewport {

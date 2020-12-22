@@ -53,6 +53,8 @@
 #parameter-table {
     position: relative;
     height: 370px;
+    border: 1px solid #666;
+    border-radius: 6px;
 }
 
 #add-parameter {

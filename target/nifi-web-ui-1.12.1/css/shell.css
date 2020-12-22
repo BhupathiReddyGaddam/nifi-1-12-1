@@ -29,7 +29,7 @@
 }
 
 #shell-container {
-    background: #fff;
+    background: #343434;
     padding: 20px;
     position: absolute;
     top: 0px;
@@ -39,21 +39,26 @@
     overflow: hidden;
 }
 
+/* #shell-container iframe html body {
+    background-color: #343434 !important;
+} */
+
 #shell-close-container {
     float: right;
 }
 
 #shell-undock-button {
     display: none;
-    float: left;
-    margin: 0px 5px 0px;
-    color: #004849;
-    font-size: 16px;
+    margin: 0 5px 0;
 }
 
+#shell-undock-button,
 #shell-close-button {
     float: left;
-    color: #004849;
+    color: #8ccdff;
+    background-color: transparent;
+    border: 1px solid #8ccdff;
+    border-radius: 4px;
     font-size: 16px;
 }
 

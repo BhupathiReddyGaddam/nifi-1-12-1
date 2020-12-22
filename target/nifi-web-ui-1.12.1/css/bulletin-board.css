@@ -29,7 +29,7 @@
 #bulletin-board-header-text {
     font-size: 18px;
     font-weight: bold;
-    color: #728E9B;
+    color: #e7e7e7;
     font-family: sans-serif;
     margin-bottom: 30px;
 }
@@ -94,6 +94,7 @@ div.bulletin-action {
     border-bottom: 1px solid #eaeef0;
     line-height: 1.3;
     padding: 10px;
+    color: #b0b0b0;
 }
 
 div.bulletin {
