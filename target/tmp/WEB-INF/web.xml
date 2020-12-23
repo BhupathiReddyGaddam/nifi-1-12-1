@@ -126,6 +126,16 @@
         <url-pattern>/login</url-pattern>
     </servlet-mapping>
 
+    <!-- servlet to logout page -->
+    <servlet>
+        <servlet-name>Logout</servlet-name>
+        <jsp-file>/WEB-INF/pages/logout.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Logout</servlet-name>
+        <url-pattern>/logout-complete</url-pattern>
+    </servlet-mapping>
+
     <!-- login filter -->
     <filter>
         <filter-name>LoginFilter</filter-name>
@@ -171,20 +181,6 @@
 Automatically created by Apache Tomcat JspC.
 -->
 
-    <servlet>
-        <servlet-name>org.apache.jsp.WEB_002dINF.partials.banners_002dutility_jsp</servlet-name>
-        <servlet-class>org.apache.jsp.WEB_002dINF.partials.banners_002dutility_jsp</servlet-class>
-    </servlet>
-
-    <servlet>
-        <servlet-name>org.apache.jsp.WEB_002dINF.partials.bulletin_002dboard.bulletin_002dboard_002dcontent_jsp</servlet-name>
-        <servlet-class>org.apache.jsp.WEB_002dINF.partials.bulletin_002dboard.bulletin_002dboard_002dcontent_jsp</servlet-class>
-    </servlet>
-
-    <servlet>
-        <servlet-name>org.apache.jsp.WEB_002dINF.partials.canvas.component_002dstate_002ddialog_jsp</servlet-name>
-        <servlet-class>org.apache.jsp.WEB_002dINF.partials.canvas.component_002dstate_002ddialog_jsp</servlet-class>
-    </servlet>
 
     <servlet>
         <servlet-name>org.apache.jsp.WEB_002dINF.partials.canvas.component_002dversion_002ddialog_jsp</servlet-name>
@@ -197,8 +193,8 @@ Automatically created by Apache Tomcat JspC.
     </servlet>
 
     <servlet>
-        <servlet-name>org.apache.jsp.WEB_002dINF.partials.canvas.connection_002dconfiguration_jsp</servlet-name>
-        <servlet-class>org.apache.jsp.WEB_002dINF.partials.canvas.connection_002dconfiguration_jsp</servlet-class>
+        <servlet-name>org.apache.jsp.WEB_002dINF.partials.bulletin_002dboard.bulletin_002dboard_002dcontent_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.WEB_002dINF.partials.bulletin_002dboard.bulletin_002dboard_002dcontent_jsp</servlet-class>
     </servlet>
 
     <servlet>
@@ -207,13 +203,38 @@ Automatically created by Apache Tomcat JspC.
     </servlet>
 
     <servlet>
+        <servlet-name>org.apache.jsp.WEB_002dINF.partials.canvas.connection_002dconfiguration_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.WEB_002dINF.partials.canvas.connection_002dconfiguration_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
         <servlet-name>org.apache.jsp.WEB_002dINF.partials.banners_002dmain_jsp</servlet-name>
         <servlet-class>org.apache.jsp.WEB_002dINF.partials.banners_002dmain_jsp</servlet-class>
     </servlet>
 
     <servlet>
-        <servlet-name>org.apache.jsp.WEB_002dINF.partials.canvas.connections_002ddialog_jsp</servlet-name>
-        <servlet-class>org.apache.jsp.WEB_002dINF.partials.canvas.connections_002ddialog_jsp</servlet-class>
+        <servlet-name>org.apache.jsp.WEB_002dINF.partials.canvas.component_002dstate_002ddialog_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.WEB_002dINF.partials.canvas.component_002dstate_002ddialog_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.WEB_002dINF.partials.banners_002dutility_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.WEB_002dINF.partials.banners_002dutility_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.WEB_002dINF.partials.canvas.enable_002dcontroller_002dservice_002ddialog_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.WEB_002dINF.partials.canvas.enable_002dcontroller_002dservice_002ddialog_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.WEB_002dINF.partials.canvas.drop_002drequest_002dstatus_002ddialog_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.WEB_002dINF.partials.canvas.drop_002drequest_002dstatus_002ddialog_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.WEB_002dINF.partials.canvas.flow_002dstatus_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.WEB_002dINF.partials.canvas.flow_002dstatus_jsp</servlet-class>
     </servlet>
 
     <servlet>
@@ -227,8 +248,13 @@ Automatically created by Apache Tomcat JspC.
     </servlet>
 
     <servlet>
-        <servlet-name>org.apache.jsp.WEB_002dINF.partials.canvas.drop_002drequest_002dstatus_002ddialog_jsp</servlet-name>
-        <servlet-class>org.apache.jsp.WEB_002dINF.partials.canvas.drop_002drequest_002dstatus_002ddialog_jsp</servlet-class>
+        <servlet-name>org.apache.jsp.WEB_002dINF.partials.canvas.label_002dconfiguration_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.WEB_002dINF.partials.canvas.label_002dconfiguration_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.WEB_002dINF.partials.canvas.listing_002drequest_002dstatus_002ddialog_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.WEB_002dINF.partials.canvas.listing_002drequest_002dstatus_002ddialog_jsp</servlet-class>
     </servlet>
 
     <servlet>
@@ -237,13 +263,8 @@ Automatically created by Apache Tomcat JspC.
     </servlet>
 
     <servlet>
-        <servlet-name>org.apache.jsp.WEB_002dINF.partials.canvas.flow_002dstatus_jsp</servlet-name>
-        <servlet-class>org.apache.jsp.WEB_002dINF.partials.canvas.flow_002dstatus_jsp</servlet-class>
-    </servlet>
-
-    <servlet>
-        <servlet-name>org.apache.jsp.WEB_002dINF.partials.canvas.instantiate_002dtemplate_002ddialog_jsp</servlet-name>
-        <servlet-class>org.apache.jsp.WEB_002dINF.partials.canvas.instantiate_002dtemplate_002ddialog_jsp</servlet-class>
+        <servlet-name>org.apache.jsp.WEB_002dINF.partials.canvas.flowfile_002ddetails_002ddialog_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.WEB_002dINF.partials.canvas.flowfile_002ddetails_002ddialog_jsp</servlet-class>
     </servlet>
 
     <servlet>
@@ -252,18 +273,18 @@ Automatically created by Apache Tomcat JspC.
     </servlet>
 
     <servlet>
-        <servlet-name>org.apache.jsp.WEB_002dINF.partials.canvas.flowfile_002ddetails_002ddialog_jsp</servlet-name>
-        <servlet-class>org.apache.jsp.WEB_002dINF.partials.canvas.flowfile_002ddetails_002ddialog_jsp</servlet-class>
+        <servlet-name>org.apache.jsp.WEB_002dINF.partials.canvas.instantiate_002dtemplate_002ddialog_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.WEB_002dINF.partials.canvas.instantiate_002dtemplate_002ddialog_jsp</servlet-class>
     </servlet>
 
     <servlet>
-        <servlet-name>org.apache.jsp.WEB_002dINF.partials.canvas.label_002dconfiguration_jsp</servlet-name>
-        <servlet-class>org.apache.jsp.WEB_002dINF.partials.canvas.label_002dconfiguration_jsp</servlet-class>
+        <servlet-name>org.apache.jsp.WEB_002dINF.partials.canvas.connections_002ddialog_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.WEB_002dINF.partials.canvas.connections_002ddialog_jsp</servlet-class>
     </servlet>
 
     <servlet>
-        <servlet-name>org.apache.jsp.WEB_002dINF.partials.canvas.enable_002dcontroller_002dservice_002ddialog_jsp</servlet-name>
-        <servlet-class>org.apache.jsp.WEB_002dINF.partials.canvas.enable_002dcontroller_002dservice_002ddialog_jsp</servlet-class>
+        <servlet-name>org.apache.jsp.WEB_002dINF.partials.canvas.new_002dcontroller_002dservice_002ddialog_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.WEB_002dINF.partials.canvas.new_002dcontroller_002dservice_002ddialog_jsp</servlet-class>
     </servlet>
 
     <servlet>
@@ -277,33 +298,13 @@ Automatically created by Apache Tomcat JspC.
     </servlet>
 
     <servlet>
-        <servlet-name>org.apache.jsp.WEB_002dINF.partials.canvas.listing_002drequest_002dstatus_002ddialog_jsp</servlet-name>
-        <servlet-class>org.apache.jsp.WEB_002dINF.partials.canvas.listing_002drequest_002dstatus_002ddialog_jsp</servlet-class>
-    </servlet>
-
-    <servlet>
-        <servlet-name>org.apache.jsp.WEB_002dINF.partials.canvas.navigation_jsp</servlet-name>
-        <servlet-class>org.apache.jsp.WEB_002dINF.partials.canvas.navigation_jsp</servlet-class>
-    </servlet>
-
-    <servlet>
         <servlet-name>org.apache.jsp.WEB_002dINF.partials.canvas.new_002dprocessor_002ddialog_jsp</servlet-name>
         <servlet-class>org.apache.jsp.WEB_002dINF.partials.canvas.new_002dprocessor_002ddialog_jsp</servlet-class>
     </servlet>
 
     <servlet>
-        <servlet-name>org.apache.jsp.WEB_002dINF.partials.canvas.override_002dpolicy_002ddialog_jsp</servlet-name>
-        <servlet-class>org.apache.jsp.WEB_002dINF.partials.canvas.override_002dpolicy_002ddialog_jsp</servlet-class>
-    </servlet>
-
-    <servlet>
-        <servlet-name>org.apache.jsp.WEB_002dINF.partials.canvas.new_002dreporting_002dtask_002ddialog_jsp</servlet-name>
-        <servlet-class>org.apache.jsp.WEB_002dINF.partials.canvas.new_002dreporting_002dtask_002ddialog_jsp</servlet-class>
-    </servlet>
-
-    <servlet>
-        <servlet-name>org.apache.jsp.WEB_002dINF.partials.canvas.new_002dcontroller_002dservice_002ddialog_jsp</servlet-name>
-        <servlet-class>org.apache.jsp.WEB_002dINF.partials.canvas.new_002dcontroller_002dservice_002ddialog_jsp</servlet-class>
+        <servlet-name>org.apache.jsp.WEB_002dINF.partials.canvas.new_002dprocess_002dgroup_002ddialog_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.WEB_002dINF.partials.canvas.new_002dprocess_002dgroup_002ddialog_jsp</servlet-class>
     </servlet>
 
     <servlet>
@@ -312,8 +313,18 @@ Automatically created by Apache Tomcat JspC.
     </servlet>
 
     <servlet>
-        <servlet-name>org.apache.jsp.WEB_002dINF.partials.canvas.new_002dprocess_002dgroup_002ddialog_jsp</servlet-name>
-        <servlet-class>org.apache.jsp.WEB_002dINF.partials.canvas.new_002dprocess_002dgroup_002ddialog_jsp</servlet-class>
+        <servlet-name>org.apache.jsp.WEB_002dINF.partials.canvas.override_002dpolicy_002ddialog_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.WEB_002dINF.partials.canvas.override_002dpolicy_002ddialog_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.WEB_002dINF.partials.canvas.navigation_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.WEB_002dINF.partials.canvas.navigation_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.WEB_002dINF.partials.canvas.new_002dremote_002dprocess_002dgroup_002ddialog_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.WEB_002dINF.partials.canvas.new_002dremote_002dprocess_002dgroup_002ddialog_jsp</servlet-class>
     </servlet>
 
     <servlet>
@@ -327,8 +338,8 @@ Automatically created by Apache Tomcat JspC.
     </servlet>
 
     <servlet>
-        <servlet-name>org.apache.jsp.WEB_002dINF.partials.canvas.port_002dconfiguration_jsp</servlet-name>
-        <servlet-class>org.apache.jsp.WEB_002dINF.partials.canvas.port_002dconfiguration_jsp</servlet-class>
+        <servlet-name>org.apache.jsp.WEB_002dINF.partials.canvas.parameter_002dcontexts_002dcontent_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.WEB_002dINF.partials.canvas.parameter_002dcontexts_002dcontent_jsp</servlet-class>
     </servlet>
 
     <servlet>
@@ -337,13 +348,13 @@ Automatically created by Apache Tomcat JspC.
     </servlet>
 
     <servlet>
-        <servlet-name>org.apache.jsp.WEB_002dINF.partials.canvas.new_002dremote_002dprocess_002dgroup_002ddialog_jsp</servlet-name>
-        <servlet-class>org.apache.jsp.WEB_002dINF.partials.canvas.new_002dremote_002dprocess_002dgroup_002ddialog_jsp</servlet-class>
+        <servlet-name>org.apache.jsp.WEB_002dINF.partials.canvas.new_002dreporting_002dtask_002ddialog_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.WEB_002dINF.partials.canvas.new_002dreporting_002dtask_002ddialog_jsp</servlet-class>
     </servlet>
 
     <servlet>
-        <servlet-name>org.apache.jsp.WEB_002dINF.partials.canvas.parameter_002dcontexts_002dcontent_jsp</servlet-name>
-        <servlet-class>org.apache.jsp.WEB_002dINF.partials.canvas.parameter_002dcontexts_002dcontent_jsp</servlet-class>
+        <servlet-name>org.apache.jsp.WEB_002dINF.partials.canvas.port_002dconfiguration_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.WEB_002dINF.partials.canvas.port_002dconfiguration_jsp</servlet-class>
     </servlet>
 
     <servlet>
@@ -352,23 +363,8 @@ Automatically created by Apache Tomcat JspC.
     </servlet>
 
     <servlet>
-        <servlet-name>org.apache.jsp.WEB_002dINF.partials.canvas.processor_002dconfiguration_jsp</servlet-name>
-        <servlet-class>org.apache.jsp.WEB_002dINF.partials.canvas.processor_002dconfiguration_jsp</servlet-class>
-    </servlet>
-
-    <servlet>
-        <servlet-name>org.apache.jsp.WEB_002dINF.partials.canvas.remote_002dprocess_002dgroup_002dconfiguration_jsp</servlet-name>
-        <servlet-class>org.apache.jsp.WEB_002dINF.partials.canvas.remote_002dprocess_002dgroup_002dconfiguration_jsp</servlet-class>
-    </servlet>
-
-    <servlet>
-        <servlet-name>org.apache.jsp.WEB_002dINF.partials.canvas.remote_002dprocess_002dgroup_002dports_jsp</servlet-name>
-        <servlet-class>org.apache.jsp.WEB_002dINF.partials.canvas.remote_002dprocess_002dgroup_002dports_jsp</servlet-class>
-    </servlet>
-
-    <servlet>
-        <servlet-name>org.apache.jsp.WEB_002dINF.partials.canvas.search_002dusers_002ddialog_jsp</servlet-name>
-        <servlet-class>org.apache.jsp.WEB_002dINF.partials.canvas.search_002dusers_002ddialog_jsp</servlet-class>
+        <servlet-name>org.apache.jsp.WEB_002dINF.partials.canvas.remote_002dport_002dconfiguration_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.WEB_002dINF.partials.canvas.remote_002dport_002dconfiguration_jsp</servlet-class>
     </servlet>
 
     <servlet>
@@ -377,8 +373,13 @@ Automatically created by Apache Tomcat JspC.
     </servlet>
 
     <servlet>
-        <servlet-name>org.apache.jsp.WEB_002dINF.partials.canvas.reporting_002dtask_002dconfiguration_jsp</servlet-name>
-        <servlet-class>org.apache.jsp.WEB_002dINF.partials.canvas.reporting_002dtask_002dconfiguration_jsp</servlet-class>
+        <servlet-name>org.apache.jsp.WEB_002dINF.partials.canvas.remote_002dprocess_002dgroup_002ddetails_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.WEB_002dINF.partials.canvas.remote_002dprocess_002dgroup_002ddetails_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.WEB_002dINF.partials.canvas.remote_002dprocess_002dgroup_002dports_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.WEB_002dINF.partials.canvas.remote_002dprocess_002dgroup_002dports_jsp</servlet-class>
     </servlet>
 
     <servlet>
@@ -387,8 +388,23 @@ Automatically created by Apache Tomcat JspC.
     </servlet>
 
     <servlet>
-        <servlet-name>org.apache.jsp.WEB_002dINF.partials.canvas.remote_002dprocess_002dgroup_002ddetails_jsp</servlet-name>
-        <servlet-class>org.apache.jsp.WEB_002dINF.partials.canvas.remote_002dprocess_002dgroup_002ddetails_jsp</servlet-class>
+        <servlet-name>org.apache.jsp.WEB_002dINF.partials.canvas.search_002dusers_002ddialog_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.WEB_002dINF.partials.canvas.search_002dusers_002ddialog_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.WEB_002dINF.partials.canvas.processor_002dconfiguration_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.WEB_002dINF.partials.canvas.processor_002dconfiguration_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.WEB_002dINF.partials.canvas.reporting_002dtask_002dconfiguration_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.WEB_002dINF.partials.canvas.reporting_002dtask_002dconfiguration_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.WEB_002dINF.partials.canvas.remote_002dprocess_002dgroup_002dconfiguration_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.WEB_002dINF.partials.canvas.remote_002dprocess_002dgroup_002dconfiguration_jsp</servlet-class>
     </servlet>
 
     <servlet>
@@ -397,18 +413,8 @@ Automatically created by Apache Tomcat JspC.
     </servlet>
 
     <servlet>
-        <servlet-name>org.apache.jsp.WEB_002dINF.partials.canvas.shell_jsp</servlet-name>
-        <servlet-class>org.apache.jsp.WEB_002dINF.partials.canvas.shell_jsp</servlet-class>
-    </servlet>
-
-    <servlet>
-        <servlet-name>org.apache.jsp.WEB_002dINF.partials.canvas.remote_002dport_002dconfiguration_jsp</servlet-name>
-        <servlet-class>org.apache.jsp.WEB_002dINF.partials.canvas.remote_002dport_002dconfiguration_jsp</servlet-class>
-    </servlet>
-
-    <servlet>
-        <servlet-name>org.apache.jsp.WEB_002dINF.partials.canvas.variable_002dconfiguration_jsp</servlet-name>
-        <servlet-class>org.apache.jsp.WEB_002dINF.partials.canvas.variable_002dconfiguration_jsp</servlet-class>
+        <servlet-name>org.apache.jsp.WEB_002dINF.partials.canvas.settings_002dcontent_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.WEB_002dINF.partials.canvas.settings_002dcontent_jsp</servlet-class>
     </servlet>
 
     <servlet>
@@ -417,13 +423,13 @@ Automatically created by Apache Tomcat JspC.
     </servlet>
 
     <servlet>
-        <servlet-name>org.apache.jsp.WEB_002dINF.partials.cluster.node_002ddetails_002ddialog_jsp</servlet-name>
-        <servlet-class>org.apache.jsp.WEB_002dINF.partials.cluster.node_002ddetails_002ddialog_jsp</servlet-class>
+        <servlet-name>org.apache.jsp.WEB_002dINF.partials.canvas.upload_002dtemplate_002ddialog_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.WEB_002dINF.partials.canvas.upload_002dtemplate_002ddialog_jsp</servlet-class>
     </servlet>
 
     <servlet>
-        <servlet-name>org.apache.jsp.WEB_002dINF.partials.canvas.settings_002dcontent_jsp</servlet-name>
-        <servlet-class>org.apache.jsp.WEB_002dINF.partials.canvas.settings_002dcontent_jsp</servlet-class>
+        <servlet-name>org.apache.jsp.WEB_002dINF.partials.canvas.shell_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.WEB_002dINF.partials.canvas.shell_jsp</servlet-class>
     </servlet>
 
     <servlet>
@@ -437,8 +443,8 @@ Automatically created by Apache Tomcat JspC.
     </servlet>
 
     <servlet>
-        <servlet-name>org.apache.jsp.WEB_002dINF.partials.canvas.upload_002dtemplate_002ddialog_jsp</servlet-name>
-        <servlet-class>org.apache.jsp.WEB_002dINF.partials.canvas.upload_002dtemplate_002ddialog_jsp</servlet-class>
+        <servlet-name>org.apache.jsp.WEB_002dINF.partials.cluster.node_002ddetails_002ddialog_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.WEB_002dINF.partials.cluster.node_002ddetails_002ddialog_jsp</servlet-class>
     </servlet>
 
     <servlet>
@@ -447,13 +453,13 @@ Automatically created by Apache Tomcat JspC.
     </servlet>
 
     <servlet>
-        <servlet-name>org.apache.jsp.WEB_002dINF.partials.history.action_002ddetails_002ddialog_jsp</servlet-name>
-        <servlet-class>org.apache.jsp.WEB_002dINF.partials.history.action_002ddetails_002ddialog_jsp</servlet-class>
+        <servlet-name>org.apache.jsp.WEB_002dINF.partials.canvas.variable_002dconfiguration_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.WEB_002dINF.partials.canvas.variable_002dconfiguration_jsp</servlet-class>
     </servlet>
 
     <servlet>
-        <servlet-name>org.apache.jsp.WEB_002dINF.partials.history.history_002dfilter_002ddialog_jsp</servlet-name>
-        <servlet-class>org.apache.jsp.WEB_002dINF.partials.history.history_002dfilter_002ddialog_jsp</servlet-class>
+        <servlet-name>org.apache.jsp.WEB_002dINF.partials.history.action_002ddetails_002ddialog_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.WEB_002dINF.partials.history.action_002ddetails_002ddialog_jsp</servlet-class>
     </servlet>
 
     <servlet>
@@ -462,23 +468,8 @@ Automatically created by Apache Tomcat JspC.
     </servlet>
 
     <servlet>
-        <servlet-name>org.apache.jsp.WEB_002dINF.partials.history.history_002dpurge_002ddialog_jsp</servlet-name>
-        <servlet-class>org.apache.jsp.WEB_002dINF.partials.history.history_002dpurge_002ddialog_jsp</servlet-class>
-    </servlet>
-
-    <servlet>
         <servlet-name>org.apache.jsp.WEB_002dINF.partials.login.login_002dform_jsp</servlet-name>
         <servlet-class>org.apache.jsp.WEB_002dINF.partials.login.login_002dform_jsp</servlet-class>
-    </servlet>
-
-    <servlet>
-        <servlet-name>org.apache.jsp.WEB_002dINF.partials.login.login_002dsubmission_jsp</servlet-name>
-        <servlet-class>org.apache.jsp.WEB_002dINF.partials.login.login_002dsubmission_jsp</servlet-class>
-    </servlet>
-
-    <servlet>
-        <servlet-name>org.apache.jsp.WEB_002dINF.partials.login.login_002dmessage_jsp</servlet-name>
-        <servlet-class>org.apache.jsp.WEB_002dINF.partials.login.login_002dmessage_jsp</servlet-class>
     </servlet>
 
     <servlet>
@@ -487,8 +478,28 @@ Automatically created by Apache Tomcat JspC.
     </servlet>
 
     <servlet>
-        <servlet-name>org.apache.jsp.WEB_002dINF.partials.ok_002ddialog_jsp</servlet-name>
-        <servlet-class>org.apache.jsp.WEB_002dINF.partials.ok_002ddialog_jsp</servlet-class>
+        <servlet-name>org.apache.jsp.WEB_002dINF.partials.login.login_002dmessage_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.WEB_002dINF.partials.login.login_002dmessage_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.WEB_002dINF.partials.history.history_002dpurge_002ddialog_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.WEB_002dINF.partials.history.history_002dpurge_002ddialog_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.WEB_002dINF.partials.logout.logout_002dmessage_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.WEB_002dINF.partials.logout.logout_002dmessage_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.WEB_002dINF.partials.history.history_002dfilter_002ddialog_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.WEB_002dINF.partials.history.history_002dfilter_002ddialog_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.WEB_002dINF.partials.login.login_002dsubmission_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.WEB_002dINF.partials.login.login_002dsubmission_jsp</servlet-class>
     </servlet>
 
     <servlet>
@@ -502,23 +513,13 @@ Automatically created by Apache Tomcat JspC.
     </servlet>
 
     <servlet>
-        <servlet-name>org.apache.jsp.WEB_002dINF.partials.provenance.provenance_002devent_002ddetails_002ddialog_jsp</servlet-name>
-        <servlet-class>org.apache.jsp.WEB_002dINF.partials.provenance.provenance_002devent_002ddetails_002ddialog_jsp</servlet-class>
-    </servlet>
-
-    <servlet>
-        <servlet-name>org.apache.jsp.WEB_002dINF.partials.provenance.provenance_002dquery_002ddialog_jsp</servlet-name>
-        <servlet-class>org.apache.jsp.WEB_002dINF.partials.provenance.provenance_002dquery_002ddialog_jsp</servlet-class>
-    </servlet>
-
-    <servlet>
         <servlet-name>org.apache.jsp.WEB_002dINF.partials.provenance.lineage_002dquery_002ddialog_jsp</servlet-name>
         <servlet-class>org.apache.jsp.WEB_002dINF.partials.provenance.lineage_002dquery_002ddialog_jsp</servlet-class>
     </servlet>
 
     <servlet>
-        <servlet-name>org.apache.jsp.WEB_002dINF.partials.status_002dhistory_002ddialog_jsp</servlet-name>
-        <servlet-class>org.apache.jsp.WEB_002dINF.partials.status_002dhistory_002ddialog_jsp</servlet-class>
+        <servlet-name>org.apache.jsp.WEB_002dINF.partials.ok_002ddialog_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.WEB_002dINF.partials.ok_002ddialog_jsp</servlet-class>
     </servlet>
 
     <servlet>
@@ -527,18 +528,18 @@ Automatically created by Apache Tomcat JspC.
     </servlet>
 
     <servlet>
-        <servlet-name>org.apache.jsp.WEB_002dINF.partials.summary.cluster_002dconnection_002dsummary_002ddialog_jsp</servlet-name>
-        <servlet-class>org.apache.jsp.WEB_002dINF.partials.summary.cluster_002dconnection_002dsummary_002ddialog_jsp</servlet-class>
+        <servlet-name>org.apache.jsp.WEB_002dINF.partials.status_002dhistory_002ddialog_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.WEB_002dINF.partials.status_002dhistory_002ddialog_jsp</servlet-class>
     </servlet>
 
     <servlet>
-        <servlet-name>org.apache.jsp.WEB_002dINF.partials.summary.cluster_002dprocess_002dgroup_002dsummary_002ddialog_jsp</servlet-name>
-        <servlet-class>org.apache.jsp.WEB_002dINF.partials.summary.cluster_002dprocess_002dgroup_002dsummary_002ddialog_jsp</servlet-class>
+        <servlet-name>org.apache.jsp.WEB_002dINF.partials.provenance.provenance_002dquery_002ddialog_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.WEB_002dINF.partials.provenance.provenance_002dquery_002ddialog_jsp</servlet-class>
     </servlet>
 
     <servlet>
-        <servlet-name>org.apache.jsp.WEB_002dINF.partials.summary.cluster_002dremote_002dprocess_002dgroup_002dsummary_002ddialog_jsp</servlet-name>
-        <servlet-class>org.apache.jsp.WEB_002dINF.partials.summary.cluster_002dremote_002dprocess_002dgroup_002dsummary_002ddialog_jsp</servlet-class>
+        <servlet-name>org.apache.jsp.WEB_002dINF.partials.provenance.provenance_002devent_002ddetails_002ddialog_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.WEB_002dINF.partials.provenance.provenance_002devent_002ddetails_002ddialog_jsp</servlet-class>
     </servlet>
 
     <servlet>
@@ -547,8 +548,8 @@ Automatically created by Apache Tomcat JspC.
     </servlet>
 
     <servlet>
-        <servlet-name>org.apache.jsp.WEB_002dINF.partials.summary.cluster_002dprocessor_002dsummary_002ddialog_jsp</servlet-name>
-        <servlet-class>org.apache.jsp.WEB_002dINF.partials.summary.cluster_002dprocessor_002dsummary_002ddialog_jsp</servlet-class>
+        <servlet-name>org.apache.jsp.WEB_002dINF.partials.summary.cluster_002dconnection_002dsummary_002ddialog_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.WEB_002dINF.partials.summary.cluster_002dconnection_002dsummary_002ddialog_jsp</servlet-class>
     </servlet>
 
     <servlet>
@@ -557,8 +558,33 @@ Automatically created by Apache Tomcat JspC.
     </servlet>
 
     <servlet>
+        <servlet-name>org.apache.jsp.WEB_002dINF.partials.summary.cluster_002dprocessor_002dsummary_002ddialog_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.WEB_002dINF.partials.summary.cluster_002dprocessor_002dsummary_002ddialog_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
         <servlet-name>org.apache.jsp.WEB_002dINF.partials.summary.summary_002dcontent_jsp</servlet-name>
         <servlet-class>org.apache.jsp.WEB_002dINF.partials.summary.summary_002dcontent_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.WEB_002dINF.partials.summary.view_002dsingle_002dnode_002ddialog_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.WEB_002dINF.partials.summary.view_002dsingle_002dnode_002ddialog_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.WEB_002dINF.partials.summary.cluster_002dremote_002dprocess_002dgroup_002dsummary_002ddialog_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.WEB_002dINF.partials.summary.cluster_002dremote_002dprocess_002dgroup_002dsummary_002ddialog_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.WEB_002dINF.partials.users.user_002ddelete_002ddialog_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.WEB_002dINF.partials.users.user_002ddelete_002ddialog_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.WEB_002dINF.partials.summary.cluster_002dprocess_002dgroup_002dsummary_002ddialog_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.WEB_002dINF.partials.summary.cluster_002dprocess_002dgroup_002dsummary_002ddialog_jsp</servlet-class>
     </servlet>
 
     <servlet>
@@ -577,18 +603,8 @@ Automatically created by Apache Tomcat JspC.
     </servlet>
 
     <servlet>
-        <servlet-name>org.apache.jsp.WEB_002dINF.partials.yes_002dno_002ddialog_jsp</servlet-name>
-        <servlet-class>org.apache.jsp.WEB_002dINF.partials.yes_002dno_002ddialog_jsp</servlet-class>
-    </servlet>
-
-    <servlet>
-        <servlet-name>org.apache.jsp.WEB_002dINF.partials.summary.view_002dsingle_002dnode_002ddialog_jsp</servlet-name>
-        <servlet-class>org.apache.jsp.WEB_002dINF.partials.summary.view_002dsingle_002dnode_002ddialog_jsp</servlet-class>
-    </servlet>
-
-    <servlet>
-        <servlet-name>org.apache.jsp.WEB_002dINF.partials.users.user_002ddelete_002ddialog_jsp</servlet-name>
-        <servlet-class>org.apache.jsp.WEB_002dINF.partials.users.user_002ddelete_002ddialog_jsp</servlet-class>
+        <servlet-name>org.apache.jsp.WEB_002dINF.partials.templates.templates_002dcontent_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.WEB_002dINF.partials.templates.templates_002dcontent_jsp</servlet-class>
     </servlet>
 
     <servlet>
@@ -597,29 +613,14 @@ Automatically created by Apache Tomcat JspC.
     </servlet>
 
     <servlet>
-        <servlet-name>org.apache.jsp.WEB_002dINF.partials.templates.templates_002dcontent_jsp</servlet-name>
-        <servlet-class>org.apache.jsp.WEB_002dINF.partials.templates.templates_002dcontent_jsp</servlet-class>
+        <servlet-name>org.apache.jsp.WEB_002dINF.partials.yes_002dno_002ddialog_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.WEB_002dINF.partials.yes_002dno_002ddialog_jsp</servlet-class>
     </servlet>
 
     <servlet>
         <servlet-name>org.apache.jsp.WEB_002dINF.partials.users.users_002dcontent_jsp</servlet-name>
         <servlet-class>org.apache.jsp.WEB_002dINF.partials.users.users_002dcontent_jsp</servlet-class>
     </servlet>
-
-    <servlet-mapping>
-        <servlet-name>org.apache.jsp.WEB_002dINF.partials.banners_002dutility_jsp</servlet-name>
-        <url-pattern>/WEB-INF/partials/banners-utility.jsp</url-pattern>
-    </servlet-mapping>
-
-    <servlet-mapping>
-        <servlet-name>org.apache.jsp.WEB_002dINF.partials.bulletin_002dboard.bulletin_002dboard_002dcontent_jsp</servlet-name>
-        <url-pattern>/WEB-INF/partials/bulletin-board/bulletin-board-content.jsp</url-pattern>
-    </servlet-mapping>
-
-    <servlet-mapping>
-        <servlet-name>org.apache.jsp.WEB_002dINF.partials.canvas.component_002dstate_002ddialog_jsp</servlet-name>
-        <url-pattern>/WEB-INF/partials/canvas/component-state-dialog.jsp</url-pattern>
-    </servlet-mapping>
 
     <servlet-mapping>
         <servlet-name>org.apache.jsp.WEB_002dINF.partials.canvas.component_002dversion_002ddialog_jsp</servlet-name>
@@ -632,8 +633,8 @@ Automatically created by Apache Tomcat JspC.
     </servlet-mapping>
 
     <servlet-mapping>
-        <servlet-name>org.apache.jsp.WEB_002dINF.partials.canvas.connection_002dconfiguration_jsp</servlet-name>
-        <url-pattern>/WEB-INF/partials/canvas/connection-configuration.jsp</url-pattern>
+        <servlet-name>org.apache.jsp.WEB_002dINF.partials.bulletin_002dboard.bulletin_002dboard_002dcontent_jsp</servlet-name>
+        <url-pattern>/WEB-INF/partials/bulletin-board/bulletin-board-content.jsp</url-pattern>
     </servlet-mapping>
 
     <servlet-mapping>
@@ -642,13 +643,38 @@ Automatically created by Apache Tomcat JspC.
     </servlet-mapping>
 
     <servlet-mapping>
+        <servlet-name>org.apache.jsp.WEB_002dINF.partials.canvas.connection_002dconfiguration_jsp</servlet-name>
+        <url-pattern>/WEB-INF/partials/canvas/connection-configuration.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
         <servlet-name>org.apache.jsp.WEB_002dINF.partials.banners_002dmain_jsp</servlet-name>
         <url-pattern>/WEB-INF/partials/banners-main.jsp</url-pattern>
     </servlet-mapping>
 
     <servlet-mapping>
-        <servlet-name>org.apache.jsp.WEB_002dINF.partials.canvas.connections_002ddialog_jsp</servlet-name>
-        <url-pattern>/WEB-INF/partials/canvas/connections-dialog.jsp</url-pattern>
+        <servlet-name>org.apache.jsp.WEB_002dINF.partials.canvas.component_002dstate_002ddialog_jsp</servlet-name>
+        <url-pattern>/WEB-INF/partials/canvas/component-state-dialog.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.WEB_002dINF.partials.banners_002dutility_jsp</servlet-name>
+        <url-pattern>/WEB-INF/partials/banners-utility.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.WEB_002dINF.partials.canvas.enable_002dcontroller_002dservice_002ddialog_jsp</servlet-name>
+        <url-pattern>/WEB-INF/partials/canvas/enable-controller-service-dialog.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.WEB_002dINF.partials.canvas.drop_002drequest_002dstatus_002ddialog_jsp</servlet-name>
+        <url-pattern>/WEB-INF/partials/canvas/drop-request-status-dialog.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.WEB_002dINF.partials.canvas.flow_002dstatus_jsp</servlet-name>
+        <url-pattern>/WEB-INF/partials/canvas/flow-status.jsp</url-pattern>
     </servlet-mapping>
 
     <servlet-mapping>
@@ -662,8 +688,13 @@ Automatically created by Apache Tomcat JspC.
     </servlet-mapping>
 
     <servlet-mapping>
-        <servlet-name>org.apache.jsp.WEB_002dINF.partials.canvas.drop_002drequest_002dstatus_002ddialog_jsp</servlet-name>
-        <url-pattern>/WEB-INF/partials/canvas/drop-request-status-dialog.jsp</url-pattern>
+        <servlet-name>org.apache.jsp.WEB_002dINF.partials.canvas.label_002dconfiguration_jsp</servlet-name>
+        <url-pattern>/WEB-INF/partials/canvas/label-configuration.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.WEB_002dINF.partials.canvas.listing_002drequest_002dstatus_002ddialog_jsp</servlet-name>
+        <url-pattern>/WEB-INF/partials/canvas/listing-request-status-dialog.jsp</url-pattern>
     </servlet-mapping>
 
     <servlet-mapping>
@@ -672,13 +703,8 @@ Automatically created by Apache Tomcat JspC.
     </servlet-mapping>
 
     <servlet-mapping>
-        <servlet-name>org.apache.jsp.WEB_002dINF.partials.canvas.flow_002dstatus_jsp</servlet-name>
-        <url-pattern>/WEB-INF/partials/canvas/flow-status.jsp</url-pattern>
-    </servlet-mapping>
-
-    <servlet-mapping>
-        <servlet-name>org.apache.jsp.WEB_002dINF.partials.canvas.instantiate_002dtemplate_002ddialog_jsp</servlet-name>
-        <url-pattern>/WEB-INF/partials/canvas/instantiate-template-dialog.jsp</url-pattern>
+        <servlet-name>org.apache.jsp.WEB_002dINF.partials.canvas.flowfile_002ddetails_002ddialog_jsp</servlet-name>
+        <url-pattern>/WEB-INF/partials/canvas/flowfile-details-dialog.jsp</url-pattern>
     </servlet-mapping>
 
     <servlet-mapping>
@@ -687,18 +713,18 @@ Automatically created by Apache Tomcat JspC.
     </servlet-mapping>
 
     <servlet-mapping>
-        <servlet-name>org.apache.jsp.WEB_002dINF.partials.canvas.flowfile_002ddetails_002ddialog_jsp</servlet-name>
-        <url-pattern>/WEB-INF/partials/canvas/flowfile-details-dialog.jsp</url-pattern>
+        <servlet-name>org.apache.jsp.WEB_002dINF.partials.canvas.instantiate_002dtemplate_002ddialog_jsp</servlet-name>
+        <url-pattern>/WEB-INF/partials/canvas/instantiate-template-dialog.jsp</url-pattern>
     </servlet-mapping>
 
     <servlet-mapping>
-        <servlet-name>org.apache.jsp.WEB_002dINF.partials.canvas.label_002dconfiguration_jsp</servlet-name>
-        <url-pattern>/WEB-INF/partials/canvas/label-configuration.jsp</url-pattern>
+        <servlet-name>org.apache.jsp.WEB_002dINF.partials.canvas.connections_002ddialog_jsp</servlet-name>
+        <url-pattern>/WEB-INF/partials/canvas/connections-dialog.jsp</url-pattern>
     </servlet-mapping>
 
     <servlet-mapping>
-        <servlet-name>org.apache.jsp.WEB_002dINF.partials.canvas.enable_002dcontroller_002dservice_002ddialog_jsp</servlet-name>
-        <url-pattern>/WEB-INF/partials/canvas/enable-controller-service-dialog.jsp</url-pattern>
+        <servlet-name>org.apache.jsp.WEB_002dINF.partials.canvas.new_002dcontroller_002dservice_002ddialog_jsp</servlet-name>
+        <url-pattern>/WEB-INF/partials/canvas/new-controller-service-dialog.jsp</url-pattern>
     </servlet-mapping>
 
     <servlet-mapping>
@@ -712,33 +738,13 @@ Automatically created by Apache Tomcat JspC.
     </servlet-mapping>
 
     <servlet-mapping>
-        <servlet-name>org.apache.jsp.WEB_002dINF.partials.canvas.listing_002drequest_002dstatus_002ddialog_jsp</servlet-name>
-        <url-pattern>/WEB-INF/partials/canvas/listing-request-status-dialog.jsp</url-pattern>
-    </servlet-mapping>
-
-    <servlet-mapping>
-        <servlet-name>org.apache.jsp.WEB_002dINF.partials.canvas.navigation_jsp</servlet-name>
-        <url-pattern>/WEB-INF/partials/canvas/navigation.jsp</url-pattern>
-    </servlet-mapping>
-
-    <servlet-mapping>
         <servlet-name>org.apache.jsp.WEB_002dINF.partials.canvas.new_002dprocessor_002ddialog_jsp</servlet-name>
         <url-pattern>/WEB-INF/partials/canvas/new-processor-dialog.jsp</url-pattern>
     </servlet-mapping>
 
     <servlet-mapping>
-        <servlet-name>org.apache.jsp.WEB_002dINF.partials.canvas.override_002dpolicy_002ddialog_jsp</servlet-name>
-        <url-pattern>/WEB-INF/partials/canvas/override-policy-dialog.jsp</url-pattern>
-    </servlet-mapping>
-
-    <servlet-mapping>
-        <servlet-name>org.apache.jsp.WEB_002dINF.partials.canvas.new_002dreporting_002dtask_002ddialog_jsp</servlet-name>
-        <url-pattern>/WEB-INF/partials/canvas/new-reporting-task-dialog.jsp</url-pattern>
-    </servlet-mapping>
-
-    <servlet-mapping>
-        <servlet-name>org.apache.jsp.WEB_002dINF.partials.canvas.new_002dcontroller_002dservice_002ddialog_jsp</servlet-name>
-        <url-pattern>/WEB-INF/partials/canvas/new-controller-service-dialog.jsp</url-pattern>
+        <servlet-name>org.apache.jsp.WEB_002dINF.partials.canvas.new_002dprocess_002dgroup_002ddialog_jsp</servlet-name>
+        <url-pattern>/WEB-INF/partials/canvas/new-process-group-dialog.jsp</url-pattern>
     </servlet-mapping>
 
     <servlet-mapping>
@@ -747,8 +753,18 @@ Automatically created by Apache Tomcat JspC.
     </servlet-mapping>
 
     <servlet-mapping>
-        <servlet-name>org.apache.jsp.WEB_002dINF.partials.canvas.new_002dprocess_002dgroup_002ddialog_jsp</servlet-name>
-        <url-pattern>/WEB-INF/partials/canvas/new-process-group-dialog.jsp</url-pattern>
+        <servlet-name>org.apache.jsp.WEB_002dINF.partials.canvas.override_002dpolicy_002ddialog_jsp</servlet-name>
+        <url-pattern>/WEB-INF/partials/canvas/override-policy-dialog.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.WEB_002dINF.partials.canvas.navigation_jsp</servlet-name>
+        <url-pattern>/WEB-INF/partials/canvas/navigation.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.WEB_002dINF.partials.canvas.new_002dremote_002dprocess_002dgroup_002ddialog_jsp</servlet-name>
+        <url-pattern>/WEB-INF/partials/canvas/new-remote-process-group-dialog.jsp</url-pattern>
     </servlet-mapping>
 
     <servlet-mapping>
@@ -762,8 +778,8 @@ Automatically created by Apache Tomcat JspC.
     </servlet-mapping>
 
     <servlet-mapping>
-        <servlet-name>org.apache.jsp.WEB_002dINF.partials.canvas.port_002dconfiguration_jsp</servlet-name>
-        <url-pattern>/WEB-INF/partials/canvas/port-configuration.jsp</url-pattern>
+        <servlet-name>org.apache.jsp.WEB_002dINF.partials.canvas.parameter_002dcontexts_002dcontent_jsp</servlet-name>
+        <url-pattern>/WEB-INF/partials/canvas/parameter-contexts-content.jsp</url-pattern>
     </servlet-mapping>
 
     <servlet-mapping>
@@ -772,13 +788,13 @@ Automatically created by Apache Tomcat JspC.
     </servlet-mapping>
 
     <servlet-mapping>
-        <servlet-name>org.apache.jsp.WEB_002dINF.partials.canvas.new_002dremote_002dprocess_002dgroup_002ddialog_jsp</servlet-name>
-        <url-pattern>/WEB-INF/partials/canvas/new-remote-process-group-dialog.jsp</url-pattern>
+        <servlet-name>org.apache.jsp.WEB_002dINF.partials.canvas.new_002dreporting_002dtask_002ddialog_jsp</servlet-name>
+        <url-pattern>/WEB-INF/partials/canvas/new-reporting-task-dialog.jsp</url-pattern>
     </servlet-mapping>
 
     <servlet-mapping>
-        <servlet-name>org.apache.jsp.WEB_002dINF.partials.canvas.parameter_002dcontexts_002dcontent_jsp</servlet-name>
-        <url-pattern>/WEB-INF/partials/canvas/parameter-contexts-content.jsp</url-pattern>
+        <servlet-name>org.apache.jsp.WEB_002dINF.partials.canvas.port_002dconfiguration_jsp</servlet-name>
+        <url-pattern>/WEB-INF/partials/canvas/port-configuration.jsp</url-pattern>
     </servlet-mapping>
 
     <servlet-mapping>
@@ -787,23 +803,8 @@ Automatically created by Apache Tomcat JspC.
     </servlet-mapping>
 
     <servlet-mapping>
-        <servlet-name>org.apache.jsp.WEB_002dINF.partials.canvas.processor_002dconfiguration_jsp</servlet-name>
-        <url-pattern>/WEB-INF/partials/canvas/processor-configuration.jsp</url-pattern>
-    </servlet-mapping>
-
-    <servlet-mapping>
-        <servlet-name>org.apache.jsp.WEB_002dINF.partials.canvas.remote_002dprocess_002dgroup_002dconfiguration_jsp</servlet-name>
-        <url-pattern>/WEB-INF/partials/canvas/remote-process-group-configuration.jsp</url-pattern>
-    </servlet-mapping>
-
-    <servlet-mapping>
-        <servlet-name>org.apache.jsp.WEB_002dINF.partials.canvas.remote_002dprocess_002dgroup_002dports_jsp</servlet-name>
-        <url-pattern>/WEB-INF/partials/canvas/remote-process-group-ports.jsp</url-pattern>
-    </servlet-mapping>
-
-    <servlet-mapping>
-        <servlet-name>org.apache.jsp.WEB_002dINF.partials.canvas.search_002dusers_002ddialog_jsp</servlet-name>
-        <url-pattern>/WEB-INF/partials/canvas/search-users-dialog.jsp</url-pattern>
+        <servlet-name>org.apache.jsp.WEB_002dINF.partials.canvas.remote_002dport_002dconfiguration_jsp</servlet-name>
+        <url-pattern>/WEB-INF/partials/canvas/remote-port-configuration.jsp</url-pattern>
     </servlet-mapping>
 
     <servlet-mapping>
@@ -812,8 +813,13 @@ Automatically created by Apache Tomcat JspC.
     </servlet-mapping>
 
     <servlet-mapping>
-        <servlet-name>org.apache.jsp.WEB_002dINF.partials.canvas.reporting_002dtask_002dconfiguration_jsp</servlet-name>
-        <url-pattern>/WEB-INF/partials/canvas/reporting-task-configuration.jsp</url-pattern>
+        <servlet-name>org.apache.jsp.WEB_002dINF.partials.canvas.remote_002dprocess_002dgroup_002ddetails_jsp</servlet-name>
+        <url-pattern>/WEB-INF/partials/canvas/remote-process-group-details.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.WEB_002dINF.partials.canvas.remote_002dprocess_002dgroup_002dports_jsp</servlet-name>
+        <url-pattern>/WEB-INF/partials/canvas/remote-process-group-ports.jsp</url-pattern>
     </servlet-mapping>
 
     <servlet-mapping>
@@ -822,8 +828,23 @@ Automatically created by Apache Tomcat JspC.
     </servlet-mapping>
 
     <servlet-mapping>
-        <servlet-name>org.apache.jsp.WEB_002dINF.partials.canvas.remote_002dprocess_002dgroup_002ddetails_jsp</servlet-name>
-        <url-pattern>/WEB-INF/partials/canvas/remote-process-group-details.jsp</url-pattern>
+        <servlet-name>org.apache.jsp.WEB_002dINF.partials.canvas.search_002dusers_002ddialog_jsp</servlet-name>
+        <url-pattern>/WEB-INF/partials/canvas/search-users-dialog.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.WEB_002dINF.partials.canvas.processor_002dconfiguration_jsp</servlet-name>
+        <url-pattern>/WEB-INF/partials/canvas/processor-configuration.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.WEB_002dINF.partials.canvas.reporting_002dtask_002dconfiguration_jsp</servlet-name>
+        <url-pattern>/WEB-INF/partials/canvas/reporting-task-configuration.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.WEB_002dINF.partials.canvas.remote_002dprocess_002dgroup_002dconfiguration_jsp</servlet-name>
+        <url-pattern>/WEB-INF/partials/canvas/remote-process-group-configuration.jsp</url-pattern>
     </servlet-mapping>
 
     <servlet-mapping>
@@ -832,18 +853,8 @@ Automatically created by Apache Tomcat JspC.
     </servlet-mapping>
 
     <servlet-mapping>
-        <servlet-name>org.apache.jsp.WEB_002dINF.partials.canvas.shell_jsp</servlet-name>
-        <url-pattern>/WEB-INF/partials/canvas/shell.jsp</url-pattern>
-    </servlet-mapping>
-
-    <servlet-mapping>
-        <servlet-name>org.apache.jsp.WEB_002dINF.partials.canvas.remote_002dport_002dconfiguration_jsp</servlet-name>
-        <url-pattern>/WEB-INF/partials/canvas/remote-port-configuration.jsp</url-pattern>
-    </servlet-mapping>
-
-    <servlet-mapping>
-        <servlet-name>org.apache.jsp.WEB_002dINF.partials.canvas.variable_002dconfiguration_jsp</servlet-name>
-        <url-pattern>/WEB-INF/partials/canvas/variable-configuration.jsp</url-pattern>
+        <servlet-name>org.apache.jsp.WEB_002dINF.partials.canvas.settings_002dcontent_jsp</servlet-name>
+        <url-pattern>/WEB-INF/partials/canvas/settings-content.jsp</url-pattern>
     </servlet-mapping>
 
     <servlet-mapping>
@@ -852,13 +863,13 @@ Automatically created by Apache Tomcat JspC.
     </servlet-mapping>
 
     <servlet-mapping>
-        <servlet-name>org.apache.jsp.WEB_002dINF.partials.cluster.node_002ddetails_002ddialog_jsp</servlet-name>
-        <url-pattern>/WEB-INF/partials/cluster/node-details-dialog.jsp</url-pattern>
+        <servlet-name>org.apache.jsp.WEB_002dINF.partials.canvas.upload_002dtemplate_002ddialog_jsp</servlet-name>
+        <url-pattern>/WEB-INF/partials/canvas/upload-template-dialog.jsp</url-pattern>
     </servlet-mapping>
 
     <servlet-mapping>
-        <servlet-name>org.apache.jsp.WEB_002dINF.partials.canvas.settings_002dcontent_jsp</servlet-name>
-        <url-pattern>/WEB-INF/partials/canvas/settings-content.jsp</url-pattern>
+        <servlet-name>org.apache.jsp.WEB_002dINF.partials.canvas.shell_jsp</servlet-name>
+        <url-pattern>/WEB-INF/partials/canvas/shell.jsp</url-pattern>
     </servlet-mapping>
 
     <servlet-mapping>
@@ -872,8 +883,8 @@ Automatically created by Apache Tomcat JspC.
     </servlet-mapping>
 
     <servlet-mapping>
-        <servlet-name>org.apache.jsp.WEB_002dINF.partials.canvas.upload_002dtemplate_002ddialog_jsp</servlet-name>
-        <url-pattern>/WEB-INF/partials/canvas/upload-template-dialog.jsp</url-pattern>
+        <servlet-name>org.apache.jsp.WEB_002dINF.partials.cluster.node_002ddetails_002ddialog_jsp</servlet-name>
+        <url-pattern>/WEB-INF/partials/cluster/node-details-dialog.jsp</url-pattern>
     </servlet-mapping>
 
     <servlet-mapping>
@@ -882,13 +893,13 @@ Automatically created by Apache Tomcat JspC.
     </servlet-mapping>
 
     <servlet-mapping>
-        <servlet-name>org.apache.jsp.WEB_002dINF.partials.history.action_002ddetails_002ddialog_jsp</servlet-name>
-        <url-pattern>/WEB-INF/partials/history/action-details-dialog.jsp</url-pattern>
+        <servlet-name>org.apache.jsp.WEB_002dINF.partials.canvas.variable_002dconfiguration_jsp</servlet-name>
+        <url-pattern>/WEB-INF/partials/canvas/variable-configuration.jsp</url-pattern>
     </servlet-mapping>
 
     <servlet-mapping>
-        <servlet-name>org.apache.jsp.WEB_002dINF.partials.history.history_002dfilter_002ddialog_jsp</servlet-name>
-        <url-pattern>/WEB-INF/partials/history/history-filter-dialog.jsp</url-pattern>
+        <servlet-name>org.apache.jsp.WEB_002dINF.partials.history.action_002ddetails_002ddialog_jsp</servlet-name>
+        <url-pattern>/WEB-INF/partials/history/action-details-dialog.jsp</url-pattern>
     </servlet-mapping>
 
     <servlet-mapping>
@@ -897,23 +908,8 @@ Automatically created by Apache Tomcat JspC.
     </servlet-mapping>
 
     <servlet-mapping>
-        <servlet-name>org.apache.jsp.WEB_002dINF.partials.history.history_002dpurge_002ddialog_jsp</servlet-name>
-        <url-pattern>/WEB-INF/partials/history/history-purge-dialog.jsp</url-pattern>
-    </servlet-mapping>
-
-    <servlet-mapping>
         <servlet-name>org.apache.jsp.WEB_002dINF.partials.login.login_002dform_jsp</servlet-name>
         <url-pattern>/WEB-INF/partials/login/login-form.jsp</url-pattern>
-    </servlet-mapping>
-
-    <servlet-mapping>
-        <servlet-name>org.apache.jsp.WEB_002dINF.partials.login.login_002dsubmission_jsp</servlet-name>
-        <url-pattern>/WEB-INF/partials/login/login-submission.jsp</url-pattern>
-    </servlet-mapping>
-
-    <servlet-mapping>
-        <servlet-name>org.apache.jsp.WEB_002dINF.partials.login.login_002dmessage_jsp</servlet-name>
-        <url-pattern>/WEB-INF/partials/login/login-message.jsp</url-pattern>
     </servlet-mapping>
 
     <servlet-mapping>
@@ -922,8 +918,28 @@ Automatically created by Apache Tomcat JspC.
     </servlet-mapping>
 
     <servlet-mapping>
-        <servlet-name>org.apache.jsp.WEB_002dINF.partials.ok_002ddialog_jsp</servlet-name>
-        <url-pattern>/WEB-INF/partials/ok-dialog.jsp</url-pattern>
+        <servlet-name>org.apache.jsp.WEB_002dINF.partials.login.login_002dmessage_jsp</servlet-name>
+        <url-pattern>/WEB-INF/partials/login/login-message.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.WEB_002dINF.partials.history.history_002dpurge_002ddialog_jsp</servlet-name>
+        <url-pattern>/WEB-INF/partials/history/history-purge-dialog.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.WEB_002dINF.partials.logout.logout_002dmessage_jsp</servlet-name>
+        <url-pattern>/WEB-INF/partials/logout/logout-message.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.WEB_002dINF.partials.history.history_002dfilter_002ddialog_jsp</servlet-name>
+        <url-pattern>/WEB-INF/partials/history/history-filter-dialog.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.WEB_002dINF.partials.login.login_002dsubmission_jsp</servlet-name>
+        <url-pattern>/WEB-INF/partials/login/login-submission.jsp</url-pattern>
     </servlet-mapping>
 
     <servlet-mapping>
@@ -937,23 +953,13 @@ Automatically created by Apache Tomcat JspC.
     </servlet-mapping>
 
     <servlet-mapping>
-        <servlet-name>org.apache.jsp.WEB_002dINF.partials.provenance.provenance_002devent_002ddetails_002ddialog_jsp</servlet-name>
-        <url-pattern>/WEB-INF/partials/provenance/provenance-event-details-dialog.jsp</url-pattern>
-    </servlet-mapping>
-
-    <servlet-mapping>
-        <servlet-name>org.apache.jsp.WEB_002dINF.partials.provenance.provenance_002dquery_002ddialog_jsp</servlet-name>
-        <url-pattern>/WEB-INF/partials/provenance/provenance-query-dialog.jsp</url-pattern>
-    </servlet-mapping>
-
-    <servlet-mapping>
         <servlet-name>org.apache.jsp.WEB_002dINF.partials.provenance.lineage_002dquery_002ddialog_jsp</servlet-name>
         <url-pattern>/WEB-INF/partials/provenance/lineage-query-dialog.jsp</url-pattern>
     </servlet-mapping>
 
     <servlet-mapping>
-        <servlet-name>org.apache.jsp.WEB_002dINF.partials.status_002dhistory_002ddialog_jsp</servlet-name>
-        <url-pattern>/WEB-INF/partials/status-history-dialog.jsp</url-pattern>
+        <servlet-name>org.apache.jsp.WEB_002dINF.partials.ok_002ddialog_jsp</servlet-name>
+        <url-pattern>/WEB-INF/partials/ok-dialog.jsp</url-pattern>
     </servlet-mapping>
 
     <servlet-mapping>
@@ -962,18 +968,18 @@ Automatically created by Apache Tomcat JspC.
     </servlet-mapping>
 
     <servlet-mapping>
-        <servlet-name>org.apache.jsp.WEB_002dINF.partials.summary.cluster_002dconnection_002dsummary_002ddialog_jsp</servlet-name>
-        <url-pattern>/WEB-INF/partials/summary/cluster-connection-summary-dialog.jsp</url-pattern>
+        <servlet-name>org.apache.jsp.WEB_002dINF.partials.status_002dhistory_002ddialog_jsp</servlet-name>
+        <url-pattern>/WEB-INF/partials/status-history-dialog.jsp</url-pattern>
     </servlet-mapping>
 
     <servlet-mapping>
-        <servlet-name>org.apache.jsp.WEB_002dINF.partials.summary.cluster_002dprocess_002dgroup_002dsummary_002ddialog_jsp</servlet-name>
-        <url-pattern>/WEB-INF/partials/summary/cluster-process-group-summary-dialog.jsp</url-pattern>
+        <servlet-name>org.apache.jsp.WEB_002dINF.partials.provenance.provenance_002dquery_002ddialog_jsp</servlet-name>
+        <url-pattern>/WEB-INF/partials/provenance/provenance-query-dialog.jsp</url-pattern>
     </servlet-mapping>
 
     <servlet-mapping>
-        <servlet-name>org.apache.jsp.WEB_002dINF.partials.summary.cluster_002dremote_002dprocess_002dgroup_002dsummary_002ddialog_jsp</servlet-name>
-        <url-pattern>/WEB-INF/partials/summary/cluster-remote-process-group-summary-dialog.jsp</url-pattern>
+        <servlet-name>org.apache.jsp.WEB_002dINF.partials.provenance.provenance_002devent_002ddetails_002ddialog_jsp</servlet-name>
+        <url-pattern>/WEB-INF/partials/provenance/provenance-event-details-dialog.jsp</url-pattern>
     </servlet-mapping>
 
     <servlet-mapping>
@@ -982,8 +988,8 @@ Automatically created by Apache Tomcat JspC.
     </servlet-mapping>
 
     <servlet-mapping>
-        <servlet-name>org.apache.jsp.WEB_002dINF.partials.summary.cluster_002dprocessor_002dsummary_002ddialog_jsp</servlet-name>
-        <url-pattern>/WEB-INF/partials/summary/cluster-processor-summary-dialog.jsp</url-pattern>
+        <servlet-name>org.apache.jsp.WEB_002dINF.partials.summary.cluster_002dconnection_002dsummary_002ddialog_jsp</servlet-name>
+        <url-pattern>/WEB-INF/partials/summary/cluster-connection-summary-dialog.jsp</url-pattern>
     </servlet-mapping>
 
     <servlet-mapping>
@@ -992,8 +998,33 @@ Automatically created by Apache Tomcat JspC.
     </servlet-mapping>
 
     <servlet-mapping>
+        <servlet-name>org.apache.jsp.WEB_002dINF.partials.summary.cluster_002dprocessor_002dsummary_002ddialog_jsp</servlet-name>
+        <url-pattern>/WEB-INF/partials/summary/cluster-processor-summary-dialog.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
         <servlet-name>org.apache.jsp.WEB_002dINF.partials.summary.summary_002dcontent_jsp</servlet-name>
         <url-pattern>/WEB-INF/partials/summary/summary-content.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.WEB_002dINF.partials.summary.view_002dsingle_002dnode_002ddialog_jsp</servlet-name>
+        <url-pattern>/WEB-INF/partials/summary/view-single-node-dialog.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.WEB_002dINF.partials.summary.cluster_002dremote_002dprocess_002dgroup_002dsummary_002ddialog_jsp</servlet-name>
+        <url-pattern>/WEB-INF/partials/summary/cluster-remote-process-group-summary-dialog.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.WEB_002dINF.partials.users.user_002ddelete_002ddialog_jsp</servlet-name>
+        <url-pattern>/WEB-INF/partials/users/user-delete-dialog.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.WEB_002dINF.partials.summary.cluster_002dprocess_002dgroup_002dsummary_002ddialog_jsp</servlet-name>
+        <url-pattern>/WEB-INF/partials/summary/cluster-process-group-summary-dialog.jsp</url-pattern>
     </servlet-mapping>
 
     <servlet-mapping>
@@ -1012,18 +1043,8 @@ Automatically created by Apache Tomcat JspC.
     </servlet-mapping>
 
     <servlet-mapping>
-        <servlet-name>org.apache.jsp.WEB_002dINF.partials.yes_002dno_002ddialog_jsp</servlet-name>
-        <url-pattern>/WEB-INF/partials/yes-no-dialog.jsp</url-pattern>
-    </servlet-mapping>
-
-    <servlet-mapping>
-        <servlet-name>org.apache.jsp.WEB_002dINF.partials.summary.view_002dsingle_002dnode_002ddialog_jsp</servlet-name>
-        <url-pattern>/WEB-INF/partials/summary/view-single-node-dialog.jsp</url-pattern>
-    </servlet-mapping>
-
-    <servlet-mapping>
-        <servlet-name>org.apache.jsp.WEB_002dINF.partials.users.user_002ddelete_002ddialog_jsp</servlet-name>
-        <url-pattern>/WEB-INF/partials/users/user-delete-dialog.jsp</url-pattern>
+        <servlet-name>org.apache.jsp.WEB_002dINF.partials.templates.templates_002dcontent_jsp</servlet-name>
+        <url-pattern>/WEB-INF/partials/templates/templates-content.jsp</url-pattern>
     </servlet-mapping>
 
     <servlet-mapping>
@@ -1032,8 +1053,8 @@ Automatically created by Apache Tomcat JspC.
     </servlet-mapping>
 
     <servlet-mapping>
-        <servlet-name>org.apache.jsp.WEB_002dINF.partials.templates.templates_002dcontent_jsp</servlet-name>
-        <url-pattern>/WEB-INF/partials/templates/templates-content.jsp</url-pattern>
+        <servlet-name>org.apache.jsp.WEB_002dINF.partials.yes_002dno_002ddialog_jsp</servlet-name>
+        <url-pattern>/WEB-INF/partials/yes-no-dialog.jsp</url-pattern>
     </servlet-mapping>
 
     <servlet-mapping>
@@ -1044,4 +1065,5 @@ Automatically created by Apache Tomcat JspC.
 <!--
 End of content automatically created by Apache Tomcat JspC.
 -->
+
 </web-app>
